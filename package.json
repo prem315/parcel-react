@@ -4,8 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"watch": "parcel src/index.html",
-		"build": "parcel build src/index.html --out-dir build"
+		"watch": "NODE_ENV=development parcel src/index.html",
+		"build": "NODE_ENV=production parcel build dist/index.html --public-url ./"
 	},
 	"author": "",
 	"license": "ISC",
